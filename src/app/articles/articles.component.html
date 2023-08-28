@@ -1,1 +1,16 @@
-<p>articles works!</p>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card" style="width: 18rem;" *ngFor="let blog of blogs ">
+            <div class="card-header">
+              {{blog.article_title}}
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">This blog contains: {{blog.article}}</li>
+                <img src="{{blog.image1}}" alt="image 1">
+                <img src="{{blog.image2}}" alt="">
+                <img src="{{blog.image3}}" alt="">
+                <li class="list-group-item"></li>
+            </ul>
+        </div>
+    </div>
+</div>
